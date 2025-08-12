@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        background-color: gray;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 30%;
+        background: ivory;
+        margin: auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px lightgray ;
+      }
+
+      h2 {
+        text-align: center;
+        color: navy;
+        margin-top: 0;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="phone"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 6px;
+        box-sizing: border-box;
+        margin-top: 10px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      button {
+        background: darkgreen;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 25px;
+        font-size: 18px;
+      }
+
+      button:hover {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form for Jignasa</h2>
+      <form>
+        <input type="text" placeholder="Name" required><br><br>
+        <input type="email" placeholder="Email" required><br><br>
+        <input type="phone" placeholder="Phone Number" required><br><br>
+        <input type="text" placeholder="College Name" required><br>
+
+        <p><b>Gender</b></p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label><br>
+
+        <p><b>Choose the program</b></p>
+        <input type="checkbox" id="Blind Coding" name="tech_events">
+        <label for="Blind Coding">Blind Coding</label><br>
+        <input type="checkbox" id="Real-time project" name="tech_events">
+        <label for="Real-time project">Hackathon on Real-time
+Project</label><br>
+        <input type="checkbox" id="Clue Chase" name="tech_events">
+        <label for="Clue Chase">Clue Chase</label><br><br>
+
+        <label><b>Branch</b></label>
+        <select id="course">
+          <option value="CSE">CSE</option>
+          <option value="CSM">CSM</option>
+          <option value="IT">IT</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+        </select>
+        <br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
